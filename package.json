@@ -1,0 +1,22 @@
+{
+  "name": "youtube-to-mp3-cli",
+  "version": "1.0.0",
+  "description": "A command line tool to convert YouTube videos to mp3 files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djackreuter/youtube-to-mp3-cli.git"
+  },
+  "author": "Dylan Reuter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djackreuter/youtube-to-mp3-cli/issues"
+  },
+  "homepage": "https://github.com/djackreuter/youtube-to-mp3-cli#readme",
+  "dependencies": {
+    "yargs": "^12.0.2"
+  }
+}
