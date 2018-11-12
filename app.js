@@ -13,9 +13,9 @@ const argv = yargs.options({
     type: 'string'
   }
 })
-.demandOption(['url', 'name'], 'Please provide a url and name for the file')
-.help()
-.alias('help', 'h')
-.argv
+  .demandOption(['url', 'name'], 'Please provide a url and name for the file')
+  .help()
+  .alias('help', 'h')
+  .argv
 
 convertVideo(argv.url, argv.name);
