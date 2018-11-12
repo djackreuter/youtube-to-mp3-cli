@@ -5,7 +5,7 @@ const ffmpeg = require('ffmpeg');
 const convertVideo = (url, name) => {
   let path = `${name}.mp4`;
   let video = ytdl(url, { filter: (format) => format.container === 'mp4' })
-    .pipe(fs.createWriteStream('path'));
+    .pipe(fs.createWriteStream(path));
   let process = new ffmpeg(path);
   process.then((video) => {
     video.fnExtractSoundToMP3(`${name}.mp3`, (err, file) => {
